@@ -1,21 +1,12 @@
 #!/usr/bin/env python
 
-# Copyright (c) 2015-2018, Rethink Robotics Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+
+#pick
+#place
+#demo
 
 """
-Sawyer SDK Inverse Kinematics Pick and Place Demo
+Sawyer Inverse Kinematics & Pick and Place Demo
 """
 import argparse
 import struct
@@ -212,18 +203,10 @@ def delete_gazebo_models():
         print("Delete Model service call failed: {0}".format(e))
 
 def main():
-    """SDK Inverse Kinematics Pick and Place Example
+    """
 
-    A Pick and Place example using the Rethink Inverse Kinematics
-    Service which returns the joint angles a requested Cartesian Pose.
-    This ROS Service client is used to request both pick and place
-    poses in the /base frame of the robot.
-
-    Note: This is a highly scripted and tuned demo. The object location
-    is "known" and movement is done completely open loop. It is expected
-    behavior that Sawyer will eventually mis-pick or drop the block. You
-    can improve on this demo by adding perception and feedback to close
-    the loop.
+    A Pick and Place example 
+    
     """
     rospy.init_node("ik_pick_and_place_demo")
     # Load Gazebo Models via Spawning Services

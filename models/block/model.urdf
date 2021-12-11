@@ -11,13 +11,13 @@
     <visual>
       <origin xyz="0.025 0.025 0.025"/>
       <geometry>
-        <box size="0.065 0.045 0.04" />
+        <box size="0.045 0.045 0.04" />
       </geometry>
     </visual>
     <collision>
       <origin xyz="0.025 0.025 0.025"/>
       <geometry>
-        <box size="0.065 0.045 0.04" />
+        <box size="0.045 0.045 0.04" />
       </geometry>
     </collision>
   </link>
